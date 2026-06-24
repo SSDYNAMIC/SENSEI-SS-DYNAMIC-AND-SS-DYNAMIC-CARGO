@@ -200,7 +200,7 @@ SENSEI SS DYNAMIC AND SS DYNAMIC CARGO
                     </div>
                     <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 leading-tight">
                         SS DYNAMIC SENSEI<br>
-                        <span class="text-red-400">BORONG CHINA & CARGO</span>
+                        <span class="text-red-400">BORONG CHINA & SS DYNAMIC CARGO</span>
                     </h1>
                     <p class="text-xl md:text-2xl font-semibold mb-4 text-red-100">
                         YOUR LOGISTICS PARTNERS CARGO FORWARDER
