@@ -648,7 +648,7 @@ SENSEI SS DYNAMIC AND SS DYNAMIC CARGO
                         <i class="fab fa-whatsapp text-3xl"></i>
                     </div>
                     <h3 class="font-bold mb-2">WhatsApp</h3>
-                    <p class="text-gray-300 text-sm">+60 12-345 6789</p>
+                    <p class="text-gray-300 text-sm">+60 11-5145 3147</p>
                     <a href="https://wa.me/60123456789" target="_blank" class="text-red-400 hover:text-red-300 text-sm">Chat Now</a>
                 </div>
                 
@@ -657,8 +657,8 @@ SENSEI SS DYNAMIC AND SS DYNAMIC CARGO
                         <i class="fas fa-envelope text-3xl"></i>
                     </div>
                     <h3 class="font-bold mb-2">Email</h3>
-                    <p class="text-gray-300 text-sm">sales@ssdynamic.com</p>
-                    <a href="mailto:sales@ssdynamic.com" class="text-red-400 hover:text-red-300 text-sm">Send Email</a>
+                    <p class="text-gray-300 text-sm">ssdynamiccargo@gmail.com & senseiborongchinassdynamic@gmail.com</p>
+                    <a href="mailto:ssdynamiccargo@gmail.com & senseiborongchinassdynamic@gmail.com" class="text-red-400 hover:text-red-300 text-sm">Send Email</a>
                 </div>
                 
                 <div class="text-center">
@@ -696,7 +696,7 @@ SENSEI SS DYNAMIC AND SS DYNAMIC CARGO
                     </a>
                 </div>
                 <p class="text-gray-400 text-sm mb-2">
-                    © 2024 SS DYNAMIC SENSEI BORONG CHINA & SS DYNAMIC CARGO. All rights reserved.
+                    © SINCE:2015 SS DYNAMIC SENSEI BORONG CHINA & SS DYNAMIC CARGO. All rights reserved.
                 </p>
                 <p class="text-red-400 text-sm font-semibold">
                     WE HELP MANAGE THE PURCHASE AND DELIVERY OF YOUR PRODUCTS ITEMS FROM 🇨🇳CHINA🇨🇳 TO 🇲🇾MALAYSIA🇲🇾
