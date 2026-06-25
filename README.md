@@ -931,5 +931,4 @@ SENSEI SS DYNAMIC AND SS DYNAMIC CARGO
                 }
             });
         });
-    </script>
-</body>
+    </script></body>
