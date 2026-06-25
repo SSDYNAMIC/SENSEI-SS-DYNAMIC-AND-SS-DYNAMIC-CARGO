@@ -688,9 +688,7 @@ SENSEI SS DYNAMIC AND SS DYNAMIC CARGO<head>
                     © SINCE:2015 SS DYNAMIC SENSEI BORONG CHINA & SS DYNAMIC CARGO. All rights reserved.
                 </p>
                 <p class="text-red-400 text-sm font-semibold">
-                    WE HELP MANAGE THE PURCHASE AND DELIVERY OF YOUR PRODUCTS ITEMS FROM 🇨🇳CHINA🇨🇳 TO 🇲🇾MALAYSIA🇲🇾</p></div></footer>
-
-<script>
+                    WE HELP MANAGE THE PURCHASE AND DELIVERY OF YOUR PRODUCTS ITEMS FROM 🇨🇳CHINA🇨🇳 TO 🇲🇾MALAYSIA🇲🇾</p></div></footer><script>
         // Mobile Menu Toggle
         const mobileMenuBtn = document.getElementById('mobile-menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
