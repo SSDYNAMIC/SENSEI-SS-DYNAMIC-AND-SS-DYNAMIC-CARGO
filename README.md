@@ -1,7 +1,5 @@
 # SENSEI-SS-DYNAMIC-AND-SS-DYNAMIC-CARGO
 SENSEI SS DYNAMIC AND SS DYNAMIC CARGO<head>
-<head>
-<title>Page Title</title>
 </head>
 <body>
 <head>
@@ -691,8 +689,7 @@ SENSEI SS DYNAMIC AND SS DYNAMIC CARGO<head>
                 </p>
                 <p class="text-red-400 text-sm font-semibold">
                     WE HELP MANAGE THE PURCHASE AND DELIVERY OF YOUR PRODUCTS ITEMS FROM 🇨🇳CHINA🇨🇳 TO 🇲🇾MALAYSIA🇲🇾
-                </p>
-            </div></footer>
+                </p></div></footer>
 
     <script>
         // Mobile Menu Toggle
