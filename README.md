@@ -149,7 +149,6 @@ SENSEI SS DYNAMIC AND SS DYNAMIC CARGO
 </head>
 <body class="bg-gray-50 text-gray-900">
     
-    <!-- Navigation -->
     <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-gray-900">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16 md:h-20">
@@ -172,7 +171,7 @@ SENSEI SS DYNAMIC AND SS DYNAMIC CARGO
                     <a href="#contact" class="text-gray-300 hover:text-red-500 transition-colors font-medium">Contact</a>
                 </div>
                 
-                <button id="mobile-menu-btn" class="lg:hidden text-white focus:outline-none">
+                <button id="mobile-menu-btn" class="lg:hidden text-white focus:outline-none" aria-label="Toggle Menu">
                     <i class="fas fa-bars text-2xl"></i>
                 </button>
             </div>
@@ -190,449 +189,438 @@ SENSEI SS DYNAMIC AND SS DYNAMIC CARGO
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero-bg min-h-screen flex items-center pt-20">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 w-full">
-            <div class="grid lg:grid-cols-2 gap-12 items-center">
-                <div class="text-white animate-fade-in">
-                    <div class="flag-banner h-16 rounded-full mb-6 flex items-center justify-center">
-                        <i class="fas fa-arrow-right text-white text-2xl"></i>
-                    </div>
-                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 leading-tight">
-                        SS DYNAMIC SENSEI<br>
-                        <span class="text-red-400">BORONG CHINA & SS DYNAMIC CARGO</span>
-                    </h1>
-                    <p class="text-xl md:text-2xl font-semibold mb-4 text-red-100">
-                        YOUR LOGISTICS PARTNERS CARGO FORWARDER
-                    </p>
-                    <p class="text-lg md:text-xl mb-8 text-gray-200 leading-relaxed">
-                        WE HELP MANAGE THE PURCHASE AND DELIVERY OF YOUR PRODUCTS ITEMS FROM 🇨🇳CHINA🇨🇳 TO 🇲🇾MALAYSIA🇲🇾
-                    </p>
-                    <div class="flex flex-wrap gap-4">
-                        <a href="#request" class="btn-primary text-white px-8 py-4 rounded-lg font-bold text-lg inline-flex items-center gap-2">
-                            <i class="fas fa-box"></i> Request Quote
-                        </a>
-                        <a href="#calculator" class="bg-white text-gray-900 px-8 py-4 rounded-lg font-bold text-lg inline-flex items-center gap-2 hover:bg-gray-100 transition">
-                            <i class="fas fa-calculator"></i> CBM Calculator
-                        </a>
-                    </div>
-                </div>
-                
-                <div class="glass-effect rounded-2xl p-6 md:p-8 animate-fade-in">
-                    <h3 class="text-2xl font-bold text-gray-900 mb-2">AUTOMATIC PRODUCT SEARCH ENGINE</h3>
-                    <p class="text-sm text-red-600 mb-4 font-semibold">
-                        <i class="fas fa-bolt"></i> Auto-opens on paste
-                    </p>
-                    <div class="space-y-4">
-                        <div>
-                            <label class="block text-sm font-semibold text-gray-700 mb-2">Product Link from 1688 / Taobao / Alibaba</label>
-                            <input type="url" id="productLink" placeholder="Paste your product link here..." 
-                                   class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg input-focus transition">
+    <main>
+        <section id="home" class="hero-bg min-h-screen flex items-center pt-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 w-full">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div class="text-white animate-fade-in">
+                        <div class="flag-banner h-16 rounded-full mb-6 flex items-center justify-center">
+                            <i class="fas fa-arrow-right text-white text-2xl"></i>
                         </div>
-                        <button onclick="openProductLink()" class="w-full btn-primary text-white py-3 rounded-lg font-bold inline-flex items-center justify-center gap-2">
-                            <i class="fas fa-external-link-alt"></i> Open in New Tab
-                        </button>
-                        <p class="text-xs text-gray-600 text-center bg-yellow-50 p-2 rounded">
-                            <i class="fas fa-info-circle text-red-600"></i> Link auto-opens 1.5s after you paste
+                        <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 leading-tight">
+                            SS DYNAMIC SENSEI<br>
+                            <span class="text-red-400">BORONG CHINA & SS DYNAMIC CARGO</span>
+                        </h1>
+                        <p class="text-xl md:text-2xl font-semibold mb-4 text-red-100">
+                            YOUR LOGISTICS PARTNERS CARGO FORWARDER
                         </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Us Section -->
-    <section id="about" class="py-16 md:py-24 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4">About SS Dynamic Sensei</h2>
-                <div class="section-divider w-24 mx-auto mb-6"></div>
-                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
-                    Your trusted partner for China 🇨🇳 to Malaysia 🇲🇾 logistics and sourcing solutions
-                </p>
-            </div>
-            
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="card-hover bg-gradient-to-br from-gray-900 to-gray-800 text-white p-8 rounded-2xl">
-                    <div class="w-16 h-16 bg-red-600 rounded-xl flex items-center justify-center mb-6">
-                        <i class="fas fa-handshake text-3xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-4">Professional Service</h3>
-                    <p class="text-gray-300">We provide end-to-end logistics solutions from product sourcing to final delivery across Malaysia.</p>
-                </div>
-                
-                <div class="card-hover bg-gradient-to-br from-red-600 to-red-700 text-white p-8 rounded-2xl">
-                    <div class="w-16 h-16 bg-white rounded-xl flex items-center justify-center mb-6">
-                        <i class="fas fa-dollar-sign text-3xl text-red-600"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-4">Competitive Rates</h3>
-                    <p class="text-gray-100">Get the best shipping rates from China with transparent CBM pricing and no hidden fees.</p>
-                </div>
-                
-                <div class="card-hover bg-gradient-to-br from-gray-900 to-gray-800 text-white p-8 rounded-2xl">
-                    <div class="w-16 h-16 bg-red-600 rounded-xl flex items-center justify-center mb-6">
-                        <i class="fas fa-clock text-3xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-4">Fast Delivery</h3>
-                    <p class="text-gray-300">Sea & air freight options with tracking. Sea: 10-18 days, Air: 5-7 days to Malaysia.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services" class="py-16 md:py-24 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4">Our Services</h2>
-                <div class="section-divider w-24 mx-auto mb-6"></div>
-                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
-                    Comprehensive logistics solutions tailored for your business needs
-                </p>
-            </div>
-            
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div class="bg-white p-6 rounded-xl shadow-lg card-hover">
-                    <i class="fas fa-shopping-cart text-4xl text-red-600 mb-4"></i>
-                    <h3 class="text-lg font-bold mb-2 text-gray-900">Product Sourcing</h3>
-                    <p class="text-gray-600 text-sm">We help you find and purchase products from 1688, Taobao, Alibaba</p>
-                </div>
-                
-                <div class="bg-white p-6 rounded-xl shadow-lg card-hover">
-                    <i class="fas fa-warehouse text-4xl text-red-600 mb-4"></i>
-                    <h3 class="text-lg font-bold mb-2 text-gray-900">Consolidation</h3>
-                    <p class="text-gray-600 text-sm">Multiple supplier consolidation to save shipping costs</p>
-                </div>
-                
-                <div class="bg-white p-6 rounded-xl shadow-lg card-hover">
-                    <i class="fas fa-check-double text-4xl text-red-600 mb-4"></i>
-                    <h3 class="text-lg font-bold mb-2 text-gray-900">Quality Check</h3>
-                    <p class="text-gray-600 text-sm">Pre-shipment inspection & photo verification available</p>
-                </div>
-                
-                <div class="bg-white p-6 rounded-xl shadow-lg card-hover">
-                    <i class="fas fa-ship text-4xl text-red-600 mb-4"></i>
-                    <h3 class="text-lg font-bold mb-2 text-gray-900">Sea & Air Freight</h3>
-                    <p class="text-gray-600 text-sm">Flexible shipping options based on urgency and budget</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Advanced Calculator Section -->
-    <section id="calculator" class="py-16 md:py-24 bg-white">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4">Shipping Calculators & Converters</h2>
-                <div class="section-divider w-24 mx-auto mb-6"></div>
-                <p class="text-lg text-gray-600">
-                    AUTOMATIC CBM TO WEIGHT(KG) CONVERTER - Two-Way Live Calculation
-                </p>
-            </div>
-            
-            <div class="grid lg:grid-cols-2 gap-8">
-                <!-- Calculator 1: Dimension to Weight/CBM -->
-                <div class="bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl shadow-2xl p-6 md:p-8 text-white">
-                    <div class="converter-badge text-white px-4 py-2 rounded-lg inline-flex items-center gap-2 mb-6">
-                        <i class="fas fa-cube"></i>
-                        <span class="font-bold">Dimensions → Weight & CBM</span>
+                        <p class="text-lg md:text-xl mb-8 text-gray-200 leading-relaxed">
+                            WE HELP MANAGE THE PURCHASE AND DELIVERY OF YOUR PRODUCTS ITEMS FROM 🇨🇳CHINA🇨🇳 TO 🇲🇾MALAYSIA🇲🇾
+                        </p>
+                        <div class="flex flex-wrap gap-4">
+                            <a href="#request" class="btn-primary text-white px-8 py-4 rounded-lg font-bold text-lg inline-flex items-center gap-2">
+                                <i class="fas fa-box"></i> Request Quote
+                            </a>
+                            <a href="#calculator" class="bg-white text-gray-900 px-8 py-4 rounded-lg font-bold text-lg inline-flex items-center gap-2 hover:bg-gray-100 transition">
+                                <i class="fas fa-calculator"></i> CBM Calculator
+                            </a>
+                        </div>
                     </div>
                     
-                    <div class="space-y-4">
-                        <div>
-                            <label class="block text-sm font-semibold mb-2">Length (CM)</label>
-                            <input type="number" id="calc-length" step="0.01" placeholder="0.00" 
-                                   class="w-full px-4 py-3 bg-gray-800 border-2 border-gray-700 rounded-lg input-focus text-white">
-                        </div>
-                        
-                        <div>
-                            <label class="block text-sm font-semibold mb-2">Width (CM)</label>
-                            <input type="number" id="calc-width" step="0.01" placeholder="0.00" 
-                                   class="w-full px-4 py-3 bg-gray-800 border-2 border-gray-700 rounded-lg input-focus text-white">
-                        </div>
-                        
-                        <div>
-                            <label class="block text-sm font-semibold mb-2">Height (CM)</label>
-                            <input type="number" id="calc-height" step="0.01" placeholder="0.00" 
-                                   class="w-full px-4 py-3 bg-gray-800 border-2 border-gray-700 rounded-lg input-focus text-white">
-                        </div>
-                        
-                        <div>
-                            <label class="block text-sm font-semibold mb-2">Actual Weight (KG)</label>
-                            <input type="number" id="calc-weight" step="0.01" placeholder="0.00" 
-                                   class="w-full px-4 py-3 bg-gray-800 border-2 border-gray-700 rounded-lg input-focus text-white">
-                        </div>
-                        
-                        <div class="bg-gray-800 p-4 rounded-xl border-2 border-red-600 mt-4">
-                            <label class="block text-xs font-semibold mb-1 text-red-400">CBM (Cubic Meter) - Sea Freight</label>
-                            <div class="text-2xl font-bold" id="result-cbm">0.00000 m³</div>
-                            <p class="text-xs text-gray-400">(L × W × H) / 1,000,000</p>
-                        </div>
-                        
-                        <div class="bg-gray-800 p-4 rounded-xl border-2 border-red-600">
-                            <label class="block text-xs font-semibold mb-1 text-red-400">Volumetric Weight - Air Freight</label>
-                            <div class="text-2xl font-bold" id="result-volumetric-air">0.00 KG</div>
-                            <p class="text-xs text-gray-400">(L × W × H) / 6,000</p>
-                        </div>
-                        
-                        <div class="bg-red-900 p-4 rounded-xl border-2 border-red-500">
-                            <label class="block text-xs font-semibold mb-1 text-red-300">Chargeable Weight</label>
-                            <div class="text-2xl font-bold text-red-400" id="result-chargeable">0.00 KG</div>
-                            <p class="text-xs text-gray-300">Higher of Actual vs Volumetric</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Calculator 2: CBM/Weight Reverse Converter -->
-                <div class="bg-gradient-to-br from-red-900 to-red-800 rounded-2xl shadow-2xl p-6 md:p-8 text-white">
-                    <div class="bg-gray-900 text-white px-4 py-2 rounded-lg inline-flex items-center gap-2 mb-6">
-                        <i class="fas fa-exchange-alt"></i>
-                        <span class="font-bold">CBM ↔ Weight Two-Way Converter</span>
-                    </div>
-                    
-                    <div class="space-y-4">
-                        <div>
-                            <label class="block text-sm font-semibold mb-2">Enter CBM (m³)</label>
-                            <input type="number" id="reverse-cbm" step="0.00001" placeholder="0.00000" 
-                                   class="w-full px-4 py-3 bg-red-950 border-2 border-red-700 rounded-lg input-focus text-white">
-                        </div>
-                        
-                        <div class="bg-red-950 p-4 rounded-xl border-2 border-gray-900">
-                            <label class="block text-xs font-semibold mb-1 text-red-300">Equivalent Weight - Sea (Anti-density)</label>
-                            <div class="text-2xl font-bold" id="reverse-sea-weight">0.00 KG</div>
-                            <p class="text-xs text-gray-300">CBM × 1,000,000 / 6,000</p>
-                        </div>
-                        
-                        <div class="bg-red-950 p-4 rounded-xl border-2 border-gray-900">
-                            <label class="block text-xs font-semibold mb-1 text-red-300">Volumetric Weight - Air</label>
-                            <div class="text-2xl font-bold" id="reverse-air-weight">0.00 KG</div>
-                            <p class="text-xs text-gray-300">1 CBM = 167 KG (Air Standard)</p>
-                        </div>
-
-                        <div class="border-t-2 border-red-700 my-4 pt-4"></div>
-
-                        <div>
-                            <label class="block text-sm font-semibold mb-2">Enter Weight (KG)</label>
-                            <input type="number" id="reverse-weight" step="0.01" placeholder="0.00" 
-                                   class="w-full px-4 py-3 bg-red-950 border-2 border-red-700 rounded-lg input-focus text-white">
-                        </div>
-                        
-                        <div class="bg-red-950 p-4 rounded-xl border-2 border-gray-900">
-                            <label class="block text-xs font-semibold mb-1 text-red-300">Equivalent CBM from Weight</label>
-                            <div class="text-2xl font-bold" id="reverse-weight-cbm">0.00000 m³</div>
-                            <p class="text-xs text-gray-300">Weight × 6,000 / 1,000,000</p>
-                        </div>
-
-                        <button onclick="resetAllCalculators()" class="w-full bg-gray-900 hover:bg-gray-800 text-white py-3 rounded-lg font-bold transition mt-4">
-                            <i class="fas fa-redo"></i> Reset All Calculators
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="mt-8 bg-gradient-to-r from-gray-900 to-red-900 text-white p-6 rounded-xl">
-                <h3 class="font-bold text-lg mb-3 flex items-center gap-2">
-                    <i class="fas fa-info-circle"></i> Formula Reference
-                </h3>
-                <div class="grid md:grid-cols-3 gap-4 text-sm">
-                    <div>
-                        <strong class="text-red-400">CBM Formula:</strong>
-                        <p class="text-gray-200">(Length × Width × Height) / 1,000,000</p>
-                    </div>
-                    <div>
-                        <strong class="text-red-400">Air Freight Volumetric:</strong>
-                        <p class="text-gray-200">(L × W × H) / 6,000 or CBM × 167</p>
-                    </div>
-                    <div>
-                        <strong class="text-red-400">Sea Freight:</strong>
-                        <p class="text-gray-200">Based on CBM, 1 CBM = 1,000 KG standard</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Enhanced Request Form Section -->
-    <section id="request" class="py-16 md:py-24 bg-gray-50">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4">Client Product Items Request Form</h2>
-                <div class="section-divider w-24 mx-auto mb-6"></div>
-                <p class="text-lg text-gray-600">
-                    Complete form with automatic WhatsApp integration
-                </p>
-            </div>
-            
-            <form id="productForm" class="bg-white rounded-2xl shadow-2xl p-6 md:p-10">
-                <!-- Customer Information -->
-                <div class="mb-8">
-                    <h3 class="text-xl font-bold text-gray-900 mb-4 pb-2 border-b-2 border-red-600">
-                        <i class="fas fa-user text-red-600"></i> Customer Information
-                    </h3>
-                    <div class="grid md:grid-cols-2 gap-6">
-                        <div>
-                            <label class="block text-sm font-semibold text-gray-700 mb-2">Customer Name *</label>
-                            <input type="text" name="customerName" required 
-                                   class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg input-focus">
-                        </div>
-                        <div>
-                            <label class="block text-sm font-semibold text-gray-700 mb-2">WhatsApp Number *</label>
-                            <input type="tel" name="whatsapp" required placeholder="+60123456789" 
-                                   class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg input-focus">
-                        </div>
-                        <div>
-                            <label class="block text-sm font-semibold text-gray-700 mb-2">E-mail *</label>
-                            <input type="email" name="email" required 
-                                   class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg input-focus">
-                        </div>
-                        <div>
-                            <label class="block text-sm font-semibold text-gray-700 mb-2">Address *</label>
-                            <input type="text" name="address" required 
-                                   class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg input-focus">
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Product Information -->
-                <div class="mb-8">
-                    <h3 class="text-xl font-bold text-gray-900 mb-4 pb-2 border-b-2 border-red-600">
-                        <i class="fas fa-box text-red-600"></i> Product Information
-                    </h3>
-                    <div class="grid md:grid-cols-2 gap-6">
-                        <div class="md:col-span-2">
-                            <label class="block text-sm font-semibold text-gray-700 mb-2">Product Name *</label>
-                            <input type="text" name="productName" required 
-                                   class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg input-focus">
-                        </div>
-                        
-                        <!-- NEW FIELDS ADDED -->
-                        <div>
-                            <label class="block text-sm font-semibold text-gray-700 mb-2">BRAND</label>
-                            <input type="text" name="brand" placeholder="e.g., Apple, Samsung" 
-                                   class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg input-focus">
-                        </div>
-                        <div>
-                            <label class="block text-sm font-semibold text-gray-700 mb-2">MODEL</label>
-                            <input type="text" name="model" placeholder="e.g., iPhone 15 Pro" 
-                                   class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg input-focus">
-                        </div>
-                        <div>
-                            <label class="block text-sm font-semibold text-gray-700 mb-2">CODE MODEL</label>
-                            <input type="text" name="codeModel" placeholder="e.g., A3102, SM-S918" 
-                                   class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg input-focus">
-                        </div>
-                        <div>
-                            <label class="block text-sm font-semibold text-gray-700 mb-2">QUANTITY CARTONS</label>
-                            <input type="number" name="quantityCartons" min="0" placeholder="0" 
-                                   class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg input-focus">
-                        </div>
-                        <div>
-                            <label class="block text-sm font-semibold text-gray-700 mb-2">QUANTITY BOX</label>
-                            <input type="number" name="quantityBox" min="0" placeholder="0" 
-                                   class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg input-focus">
-                        </div>
-                        <div>
-                            <label class="block text-sm font-semibold text-gray-700 mb-2">VOLUMETRIC WEIGHT KG</label>
-                            <input type="number" step="0.01" name="volumetricWeight" placeholder="Auto-calculated" 
-                                   class="w-full px-4 py-3 border-2 border-red-300 bg-red-50 rounded-lg text-red-600 font-semibold">
-                        </div>
-                        
-                        <div class="md:col-span-2">
-                            <label class="block text-sm font-semibold text-gray-700 mb-2">Product Linked</label>
-                            <div class="flex gap-2">
-                                <input type="url" id="form-product-link" name="productLink" placeholder="https://1688.com/... or https://taobao.com/..." 
-                                       class="flex-1 px-4 py-3 border-2 border-gray-300 rounded-lg input-focus">
-                                <button type="button" onclick="openFormLink()" class="px-6 bg-gray-900 text-white rounded-lg hover:bg-gray-800 transition">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </button>
+                    <div class="glass-effect rounded-2xl p-6 md:p-8 animate-fade-in">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">AUTOMATIC PRODUCT SEARCH ENGINE</h3>
+                        <p class="text-sm text-red-600 mb-4 font-semibold">
+                            <i class="fas fa-bolt"></i> Auto-opens on paste
+                        </p>
+                        <div class="space-y-4">
+                            <div>
+                                <label for="productLink" class="block text-sm font-semibold text-gray-700 mb-2">Product Link from 1688 / Taobao / Alibaba</label>
+                                <input type="url" id="productLink" placeholder="Paste your product link here..." 
+                                       class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg input-focus transition">
                             </div>
-                            <p class="text-xs text-gray-500 mt-1">
-                                <i class="fas fa-bolt text-red-600"></i> Link auto-opens on paste
+                            <button onclick="openProductLink()" class="w-full btn-primary text-white py-3 rounded-lg font-bold inline-flex items-center justify-center gap-2">
+                                <i class="fas fa-external-link-alt"></i> Open in New Tab
+                            </button>
+                            <p class="text-xs text-gray-600 text-center bg-yellow-50 p-2 rounded">
+                                <i class="fas fa-info-circle text-red-600"></i> Link auto-opens 1.5s after you paste
                             </p>
                         </div>
-                        
-                        <div class="md:col-span-2">
-                            <label class="block text-sm font-semibold text-gray-700 mb-2">Product Images Photo Upload</label>
-                            <input type="file" id="productImages" name="productImages" multiple accept="image/*" 
-                                   class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg input-focus">
-                            <div id="imagePreview" class="upload-preview"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-16 md:py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4">About SS Dynamic Sensei</h2>
+                    <div class="section-divider w-24 mx-auto mb-6"></div>
+                    <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                        Your trusted partner for China 🇨🇳 to Malaysia 🇲🇾 logistics and sourcing solutions
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="card-hover bg-gradient-to-br from-gray-900 to-gray-800 text-white p-8 rounded-2xl">
+                        <div class="w-16 h-16 bg-red-600 rounded-xl flex items-center justify-center mb-6">
+                            <i class="fas fa-handshake text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">Professional Service</h3>
+                        <p class="text-gray-300">We provide end-to-end logistics solutions from product sourcing to final delivery across Malaysia.</p>
+                    </div>
+                    
+                    <div class="card-hover bg-gradient-to-br from-red-600 to-red-700 text-white p-8 rounded-2xl">
+                        <div class="w-16 h-16 bg-white rounded-xl flex items-center justify-center mb-6">
+                            <i class="fas fa-dollar-sign text-3xl text-red-600"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">Competitive Rates</h3>
+                        <p class="text-gray-100">Get the best shipping rates from China with transparent CBM pricing and no hidden fees.</p>
+                    </div>
+                    
+                    <div class="card-hover bg-gradient-to-br from-gray-900 to-gray-800 text-white p-8 rounded-2xl">
+                        <div class="w-16 h-16 bg-red-600 rounded-xl flex items-center justify-center mb-6">
+                            <i class="fas fa-clock text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">Fast Delivery</h3>
+                        <p class="text-gray-300">Sea & air freight options with tracking. Sea: 10-18 days, Air: 5-7 days to Malaysia.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="py-16 md:py-24 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4">Our Services</h2>
+                    <div class="section-divider w-24 mx-auto mb-6"></div>
+                    <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                        Comprehensive logistics solutions tailored for your business needs
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="bg-white p-6 rounded-xl shadow-lg card-hover">
+                        <i class="fas fa-shopping-cart text-4xl text-red-600 mb-4"></i>
+                        <h3 class="text-lg font-bold mb-2 text-gray-900">Product Sourcing</h3>
+                        <p class="text-gray-600 text-sm">We help you find and purchase products from 1688, Taobao, Alibaba</p>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-xl shadow-lg card-hover">
+                        <i class="fas fa-warehouse text-4xl text-red-600 mb-4"></i>
+                        <h3 class="text-lg font-bold mb-2 text-gray-900">Consolidation</h3>
+                        <p class="text-gray-600 text-sm">Multiple supplier consolidation to save shipping costs</p>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-xl shadow-lg card-hover">
+                        <i class="fas fa-check-double text-4xl text-red-600 mb-4"></i>
+                        <h3 class="text-lg font-bold mb-2 text-gray-900">Quality Check</h3>
+                        <p class="text-gray-600 text-sm">Pre-shipment inspection & photo verification available</p>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-xl shadow-lg card-hover">
+                        <i class="fas fa-ship text-4xl text-red-600 mb-4"></i>
+                        <h3 class="text-lg font-bold mb-2 text-gray-900">Sea & Air Freight</h3>
+                        <p class="text-gray-600 text-sm">Flexible shipping options based on urgency and budget</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="calculator" class="py-16 md:py-24 bg-white">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4">Shipping Calculators & Converters</h2>
+                    <div class="section-divider w-24 mx-auto mb-6"></div>
+                    <p class="text-lg text-gray-600">
+                        AUTOMATIC CBM TO WEIGHT(KG) CONVERTER - Two-Way Live Calculation
+                    </p>
+                </div>
+                
+                <div class="grid lg:grid-cols-2 gap-8">
+                    <div class="bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl shadow-2xl p-6 md:p-8 text-white">
+                        <div class="converter-badge text-white px-4 py-2 rounded-lg inline-flex items-center gap-2 mb-6">
+                            <i class="fas fa-cube"></i>
+                            <span class="font-bold">Dimensions → Weight & CBM</span>
                         </div>
                         
-                        <div>
-                            <label class="block text-sm font-semibold text-gray-700 mb-2">Quantity Pieces *</label>
-                            <input type="number" name="quantity" required min="1" 
-                                   class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg input-focus">
+                        <div class="space-y-4">
+                            <div>
+                                <label for="calc-length" class="block text-sm font-semibold mb-2">Length (CM)</label>
+                                <input type="number" id="calc-length" step="0.01" placeholder="0.00" 
+                                       class="w-full px-4 py-3 bg-gray-800 border-2 border-gray-700 rounded-lg input-focus text-white">
+                            </div>
+                            
+                            <div>
+                                <label for="calc-width" class="block text-sm font-semibold mb-2">Width (CM)</label>
+                                <input type="number" id="calc-width" step="0.01" placeholder="0.00" 
+                                       class="w-full px-4 py-3 bg-gray-800 border-2 border-gray-700 rounded-lg input-focus text-white">
+                            </div>
+                            
+                            <div>
+                                <label for="calc-height" class="block text-sm font-semibold mb-2">Height (CM)</label>
+                                <input type="number" id="calc-height" step="0.01" placeholder="0.00" 
+                                       class="w-full px-4 py-3 bg-gray-800 border-2 border-gray-700 rounded-lg input-focus text-white">
+                            </div>
+                            
+                            <div>
+                                <label for="calc-weight" class="block text-sm font-semibold mb-2">Actual Weight (KG)</label>
+                                <input type="number" id="calc-weight" step="0.01" placeholder="0.00" 
+                                       class="w-full px-4 py-3 bg-gray-800 border-2 border-gray-700 rounded-lg input-focus text-white">
+                            </div>
+                            
+                            <div class="bg-gray-800 p-4 rounded-xl border-2 border-red-600 mt-4">
+                                <label class="block text-xs font-semibold mb-1 text-red-400">CBM (Cubic Meter) - Sea Freight</label>
+                                <div class="text-2xl font-bold" id="result-cbm">0.00000 m³</div>
+                                <p class="text-xs text-gray-400">(L × W × H) / 1,000,000</p>
+                            </div>
+                            
+                            <div class="bg-gray-800 p-4 rounded-xl border-2 border-red-600">
+                                <label class="block text-xs font-semibold mb-1 text-red-400">Volumetric Weight - Air Freight</label>
+                                <div class="text-2xl font-bold" id="result-volumetric-air">0.00 KG</div>
+                                <p class="text-xs text-gray-400">(L × W × H) / 6,000</p>
+                            </div>
+                            
+                            <div class="bg-red-900 p-4 rounded-xl border-2 border-red-500">
+                                <label class="block text-xs font-semibold mb-1 text-red-300">Chargeable Weight</label>
+                                <div class="text-2xl font-bold text-red-400" id="result-chargeable">0.00 KG</div>
+                                <p class="text-xs text-gray-300">Higher of Actual vs Volumetric</p>
+                            </div>
                         </div>
-                        <div>
-                            <label class="block text-sm font-semibold text-gray-700 mb-2">Variant</label>
-                            <input type="text" name="variant" placeholder="e.g., Model A, Style B" 
-                                   class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg input-focus">
+                    </div>
+
+                    <div class="bg-gradient-to-br from-red-900 to-red-800 rounded-2xl shadow-2xl p-6 md:p-8 text-white">
+                        <div class="bg-gray-900 text-white px-4 py-2 rounded-lg inline-flex items-center gap-2 mb-6">
+                            <i class="fas fa-exchange-alt"></i>
+                            <span class="font-bold">CBM ↔ Weight Two-Way Converter</span>
                         </div>
-                        <div>
-                            <label class="block text-sm font-semibold text-gray-700 mb-2">Color</label>
-                            <input type="text" name="color" 
-                                   class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg input-focus">
-                        </div>
-                        <div>
-                            <label class="block text-sm font-semibold text-gray-700 mb-2">Size</label>
-                            <input type="text" name="size" 
-                                   class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg input-focus">
+                        
+                        <div class="space-y-4">
+                            <div>
+                                <label for="reverse-cbm" class="block text-sm font-semibold mb-2">Enter CBM (m³)</label>
+                                <input type="number" id="reverse-cbm" step="0.00001" placeholder="0.00000" 
+                                       class="w-full px-4 py-3 bg-red-950 border-2 border-red-700 rounded-lg input-focus text-white">
+                            </div>
+                            
+                            <div class="bg-red-950 p-4 rounded-xl border-2 border-gray-900">
+                                <label class="block text-xs font-semibold mb-1 text-red-300">Equivalent Weight - Sea (Anti-density)</label>
+                                <div class="text-2xl font-bold" id="reverse-sea-weight">0.00 KG</div>
+                                <p class="text-xs text-gray-300">CBM × 1,000,000 / 6,000</p>
+                            </div>
+                            
+                            <div class="bg-red-950 p-4 rounded-xl border-2 border-gray-900">
+                                <label class="block text-xs font-semibold mb-1 text-red-300">Volumetric Weight - Air</label>
+                                <div class="text-2xl font-bold" id="reverse-air-weight">0.00 KG</div>
+                                <p class="text-xs text-gray-300">1 CBM = 167 KG (Air Standard)</p>
+                            </div>
+
+                            <div class="border-t-2 border-red-700 my-4 pt-4"></div>
+
+                            <div>
+                                <label for="reverse-weight" class="block text-sm font-semibold mb-2">Enter Weight (KG)</label>
+                                <input type="number" id="reverse-weight" step="0.01" placeholder="0.00" 
+                                       class="w-full px-4 py-3 bg-red-950 border-2 border-red-700 rounded-lg input-focus text-white">
+                            </div>
+                            
+                            <div class="bg-red-950 p-4 rounded-xl border-2 border-gray-900">
+                                <label class="block text-xs font-semibold mb-1 text-red-300">Equivalent CBM from Weight</label>
+                                <div class="text-2xl font-bold" id="reverse-weight-cbm">0.00000 m³</div>
+                                <p class="text-xs text-gray-300">Weight × 6,000 / 1,000,000</p>
+                            </div>
+
+                            <button onclick="resetAllCalculators()" class="w-full bg-gray-900 hover:bg-gray-800 text-white py-3 rounded-lg font-bold transition mt-4">
+                                <i class="fas fa-redo"></i> Reset All Calculators
+                            </button>
                         </div>
                     </div>
                 </div>
 
-                <!-- Shipping Dimensions -->
-                <div class="mb-8">
-                    <h3 class="text-xl font-bold text-gray-900 mb-4 pb-2 border-b-2 border-red-600">
-                        <i class="fas fa-ruler-combined text-red-600"></i> Shipping Dimensions & Automatic Converters
+                <div class="mt-8 bg-gradient-to-r from-gray-900 to-red-900 text-white p-6 rounded-xl">
+                    <h3 class="font-bold text-lg mb-3 flex items-center gap-2">
+                        <i class="fas fa-info-circle"></i> Formula Reference
                     </h3>
-                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="grid md:grid-cols-3 gap-4 text-sm">
                         <div>
-                            <label class="block text-sm font-semibold text-gray-700 mb-2">Weight (KG)</label>
-                            <input type="number" step="0.01" id="form-weight" name="weight" 
-                                   class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg input-focus form-dimension">
+                            <strong class="text-red-400">CBM Formula:</strong>
+                            <p class="text-gray-200">(Length × Width × Height) / 1,000,000</p>
                         </div>
                         <div>
-                            <label class="block text-sm font-semibold text-gray-700 mb-2">Length (CM)</label>
-                            <input type="number" step="0.01" id="form-length" name="length" 
-                                   class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg input-focus form-dimension">
+                            <strong class="text-red-400">Air Freight Volumetric:</strong>
+                            <p class="text-gray-200">(L × W × Height) / 6,000 or CBM × 167</p>
                         </div>
                         <div>
-                            <label class="block text-sm font-semibold text-gray-700 mb-2">Width (CM)</label>
-                            <input type="number" step="0.01" id="form-width" name="width" 
-                                   class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg input-focus form-dimension">
-                        </div>
-                        <div>
-                            <label class="block text-sm font-semibold text-gray-700 mb-2">Height (CM)</label>
-                            <input type="number" step="0.01" id="form-height" name="height" 
-                                   class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg input-focus form-dimension">
-                        </div>
-                        <div class="lg:col-span-2">
-                            <label class="block text-sm font-semibold text-gray-700 mb-2">
-                                CBM & WEIGHT CONVERTER (Auto-Calculated)
-                            </label>
-                            <input type="text" id="form-cbm" name="cbm" readonly 
-                                   class="w-full px-4 py-3 border-2 border-red-600 bg-red-50 rounded-lg font-bold text-red-600 text-sm">
+                            <strong class="text-red-400">Sea Freight:</strong>
+                            <p class="text-gray-200">Based on CBM, 1 CBM = 1,000 KG standard</p>
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
 
-                <!-- Submit Buttons -->
-                <div class="flex flex-col sm:flex-row gap-4">
-                    <button type="button" onclick="sendToWhatsApp()" 
-                            class="flex-1 btn-primary text-white py-4 rounded-lg font-bold text-lg inline-flex items-center justify-center gap-2">
-                        <i class="fab fa-whatsapp"></i> AUTOMATIC WHATSAPP BUTTON - Send All Data
-                    </button>
-                    <button type="reset" class="sm:w-auto px-8 bg-gray-900 text-white py-4 rounded-lg font-bold hover:bg-gray-800 transition">
-                        <i class="fas fa-redo"></i> Reset Form
-                    </button>
+        <section id="request" class="py-16 md:py-24 bg-gray-50">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4">Client Product Items Request Form</h2>
+                    <div class="section-divider w-24 mx-auto mb-6"></div>
+                    <p class="text-lg text-gray-600">
+                        Complete form with automatic WhatsApp integration
+                    </p>
                 </div>
-            </form>
-        </div>
-    </section>
+                
+                <form id="productForm" class="bg-white rounded-2xl shadow-2xl p-6 md:p-10">
+                    <div class="mb-8">
+                        <h3 class="text-xl font-bold text-gray-900 mb-4 pb-2 border-b-2 border-red-600">
+                            <i class="fas fa-user text-red-600"></i> Customer Information
+                        </h3>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-2">Customer Name *</label>
+                                <input type="text" name="customerName" required 
+                                       class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg input-focus">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-2">WhatsApp Number *</label>
+                                <input type="tel" name="whatsapp" required placeholder="+60123456789" 
+                                       class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg input-focus">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-2">E-mail *</label>
+                                <input type="email" name="email" required 
+                                       class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg input-focus">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-2">Address *</label>
+                                <input type="text" name="address" required 
+                                       class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg input-focus">
+                            </div>
+                        </div>
+                    </div>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-16 md:py-24 bg-gradient-to-br from-gray-900 to-gray-800 text-white">
+                    <div class="mb-8">
+                        <h3 class="text-xl font-bold text-gray-900 mb-4 pb-2 border-b-2 border-red-600">
+                            <i class="fas fa-box text-red-600"></i> Product Information
+                        </h3>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="md:col-span-2">
+                                <label class="block text-sm font-semibold text-gray-700 mb-2">Product Name *</label>
+                                <input type="text" name="productName" required 
+                                       class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg input-focus">
+                            </div>
+                            
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-2">BRAND</label>
+                                <input type="text" name="brand" placeholder="e.g., Apple, Samsung" 
+                                       class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg input-focus">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-2">MODEL</label>
+                                <input type="text" name="model" placeholder="e.g., iPhone 15 Pro" 
+                                       class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg input-focus">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-2">CODE MODEL</label>
+                                <input type="text" name="codeModel" placeholder="e.g., A3102, SM-S918" 
+                                       class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg input-focus">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-2">QUANTITY CARTONS</label>
+                                <input type="number" name="quantityCartons" min="0" placeholder="0" 
+                                       class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg input-focus">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-2">QUANTITY BOX</label>
+                                <input type="number" name="quantityBox" min="0" placeholder="0" 
+                                       class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg input-focus">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-2">VOLUMETRIC WEIGHT KG</label>
+                                <input type="number" step="0.01" name="volumetricWeight" readonly placeholder="Auto-calculated" 
+                                       class="w-full px-4 py-3 border-2 border-red-300 bg-red-50 rounded-lg text-red-600 font-semibold">
+                            </div>
+                            
+                            <div class="md:col-span-2">
+                                <label for="form-product-link" class="block text-sm font-semibold text-gray-700 mb-2">Product Linked</label>
+                                <div class="flex gap-2">
+                                    <input type="url" id="form-product-link" name="productLink" placeholder="https://1688.com/... or https://taobao.com/..." 
+                                           class="flex-1 px-4 py-3 border-2 border-gray-300 rounded-lg input-focus">
+                                    <button type="button" onclick="openFormLink()" class="px-6 bg-gray-900 text-white rounded-lg hover:bg-gray-800 transition">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </button>
+                                </div>
+                                <p class="text-xs text-gray-500 mt-1">
+                                    <i class="fas fa-bolt text-red-600"></i> Link auto-opens on paste
+                                </p>
+                            </div>
+                            
+                            <div class="md:col-span-2">
+                                <label for="productImages" class="block text-sm font-semibold text-gray-700 mb-2">Product Images Photo Upload</label>
+                                <input type="file" id="productImages" name="productImages" multiple accept="image/*" 
+                                       class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg input-focus">
+                                <div id="imagePreview" class="upload-preview"></div>
+                            </div>
+                            
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-2">Quantity Pieces *</label>
+                                <input type="number" name="quantity" required min="1" 
+                                       class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg input-focus">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-2">Variant</label>
+                                <input type="text" name="variant" placeholder="e.g., Model A, Style B" 
+                                       class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg input-focus">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-2">Color</label>
+                                <input type="text" name="color" 
+                                       class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg input-focus">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-2">Size</label>
+                                <input type="text" name="size" 
+                                       class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg input-focus">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-8">
+                        <h3 class="text-xl font-bold text-gray-900 mb-4 pb-2 border-b-2 border-red-600">
+                            <i class="fas fa-ruler-combined text-red-600"></i> Shipping Dimensions & Automatic Converters
+                        </h3>
+                        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                            <div>
+                                <label for="form-weight" class="block text-sm font-semibold text-gray-700 mb-2">Weight (KG)</label>
+                                <input type="number" step="0.01" id="form-weight" name="weight" 
+                                       class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg input-focus form-dimension">
+                            </div>
+                            <div>
+                                <label for="form-length" class="block text-sm font-semibold text-gray-700 mb-2">Length (CM)</label>
+                                <input type="number" step="0.01" id="form-length" name="length" 
+                                       class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg input-focus form-dimension">
+                            </div>
+                            <div>
+                                <label for="form-width" class="block text-sm font-semibold text-gray-700 mb-2">Width (CM)</label>
+                                <input type="number" step="0.01" id="form-width" name="width" 
+                                       class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg input-focus form-dimension">
+                            </div>
+                            <div>
+                                <label for="form-height" class="block text-sm font-semibold text-gray-700 mb-2">Height (CM)</label>
+                                <input type="number" step="0.01" id="form-height" name="height" 
+                                       class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg input-focus form-dimension">
+                            </div>
+                            <div class="lg:col-span-2">
+                                <label for="form-cbm" class="block text-sm font-semibold text-gray-700 mb-2">
+                                    CBM & WEIGHT CONVERTER (Auto-Calculated)
+                                </label>
+                                <input type="text" id="form-cbm" name="cbm" readonly 
+                                       class="w-full px-4 py-3 border-2 border-red-600 bg-red-50 rounded-lg font-bold text-red-600 text-sm">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button type="button" onclick="sendToWhatsApp()" 
+                                class="flex-1 btn-primary text-white py-4 rounded-lg font-bold text-lg inline-flex items-center justify-center gap-2">
+                            <i class="fab fa-whatsapp"></i> AUTOMATIC WHATSAPP BUTTON - Send All Data
+                        </button>
+                        <button type="reset" class="sm:w-auto px-8 bg-gray-900 text-white py-4 rounded-lg font-bold hover:bg-gray-800 transition">
+                            <i class="fas fa-redo"></i> Reset Form
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact" class="py-16 md:py-24 bg-gradient-to-br from-gray-900 to-gray-800 text-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12">
                 <h2 class="text-3xl md:text-4xl font-extrabold mb-4">Contact Us</h2>
@@ -649,7 +637,7 @@ SENSEI SS DYNAMIC AND SS DYNAMIC CARGO
                     </div>
                     <h3 class="font-bold mb-2">WhatsApp</h3>
                     <p class="text-gray-300 text-sm">+60 11-5145 3147</p>
-                    <a href="https://wa.me/60123456789" target="_blank" class="text-red-400 hover:text-red-300 text-sm">Chat Now</a>
+                    <a href="https://wa.me/601151453147" target="_blank" class="text-red-400 hover:text-red-300 text-sm">Chat Now</a>
                 </div>
                 
                 <div class="text-center">
@@ -657,8 +645,8 @@ SENSEI SS DYNAMIC AND SS DYNAMIC CARGO
                         <i class="fas fa-envelope text-3xl"></i>
                     </div>
                     <h3 class="font-bold mb-2">Email</h3>
-                    <p class="text-gray-300 text-sm">ssdynamiccargo@gmail.com & senseiborongchinassdynamic@gmail.com</p>
-                    <a href="mailto:ssdynamiccargo@gmail.com & senseiborongchinassdynamic@gmail.com" class="text-red-400 hover:text-red-300 text-sm">Send Email</a>
+                    <p class="text-gray-300 text-sm">ssdynamiccargo@gmail.com<br>senseiborongchinassdynamic@gmail.com</p>
+                    <a href="mailto:ssdynamiccargo@gmail.com,senseiborongchinassdynamic@gmail.com" class="text-red-400 hover:text-red-300 text-sm">Send Email</a>
                 </div>
                 
                 <div class="text-center">
@@ -682,16 +670,16 @@ SENSEI SS DYNAMIC AND SS DYNAMIC CARGO
             
             <div class="mt-12 pt-12 border-t border-gray-700 text-center">
                 <div class="flex justify-center space-x-6 mb-6">
-                    <a href="#" class="w-12 h-12 bg-gray-800 hover:bg-red-600 rounded-full flex items-center justify-center transition">
+                    <a href="#" class="w-12 h-12 bg-gray-800 hover:bg-red-600 rounded-full flex items-center justify-center transition" aria-label="Facebook">
                         <i class="fab fa-facebook-f"></i>
                     </a>
-                    <a href="#" class="w-12 h-12 bg-gray-800 hover:bg-red-600 rounded-full flex items-center justify-center transition">
+                    <a href="#" class="w-12 h-12 bg-gray-800 hover:bg-red-600 rounded-full flex items-center justify-center transition" aria-label="Instagram">
                         <i class="fab fa-instagram"></i>
                     </a>
-                    <a href="#" class="w-12 h-12 bg-gray-800 hover:bg-red-600 rounded-full flex items-center justify-center transition">
+                    <a href="#" class="w-12 h-12 bg-gray-800 hover:bg-red-600 rounded-full flex items-center justify-center transition" aria-label="TikTok">
                         <i class="fab fa-tiktok"></i>
                     </a>
-                    <a href="#" class="w-12 h-12 bg-gray-800 hover:bg-red-600 rounded-full flex items-center justify-center transition">
+                    <a href="#" class="w-12 h-12 bg-gray-800 hover:bg-red-600 rounded-full flex items-center justify-center transition" aria-label="WeChat">
                         <i class="fab fa-weixin"></i>
                     </a>
                 </div>
@@ -702,8 +690,7 @@ SENSEI SS DYNAMIC AND SS DYNAMIC CARGO
                     WE HELP MANAGE THE PURCHASE AND DELIVERY OF YOUR PRODUCTS ITEMS FROM 🇨🇳CHINA🇨🇳 TO 🇲🇾MALAYSIA🇲🇾
                 </p>
             </div>
-        </div>
-    </section>
+        </footer>
 
     <script>
         // Mobile Menu Toggle
@@ -736,32 +723,26 @@ SENSEI SS DYNAMIC AND SS DYNAMIC CARGO
             }
         });
 
-        // AUTOMATIC PRODUCT SEARCH ENGINE - Auto open on paste
-        let pasteTimeout;
+        // AUTOMATIC PRODUCT SEARCH ENGINE - Isolated auto open timers on paste
+        let heroPasteTimeout;
+        let formPasteTimeout;
+
         document.getElementById('productLink').addEventListener('paste', function(e) {
-            clearTimeout(pasteTimeout);
-            pasteTimeout = setTimeout(() => {
+            clearTimeout(heroPasteTimeout);
+            heroPasteTimeout = setTimeout(() => {
                 const link = e.target.value;
                 if (link) {
-                    if (!link.startsWith('http://') && !link.startsWith('https://')) {
-                        window.open('https://' + link, '_blank');
-                    } else {
-                        window.open(link, '_blank');
-                    }
+                    window.open(link.startsWith('http') ? link : 'https://' + link, '_blank');
                 }
             }, 1500);
         });
 
         document.getElementById('form-product-link').addEventListener('paste', function(e) {
-            clearTimeout(pasteTimeout);
-            pasteTimeout = setTimeout(() => {
+            clearTimeout(formPasteTimeout);
+            formPasteTimeout = setTimeout(() => {
                 const link = e.target.value;
                 if (link) {
-                    if (!link.startsWith('http://') && !link.startsWith('https://')) {
-                        window.open('https://' + link, '_blank');
-                    } else {
-                        window.open(link, '_blank');
-                    }
+                    window.open(link.startsWith('http') ? link : 'https://' + link, '_blank');
                 }
             }, 1500);
         });
@@ -769,11 +750,7 @@ SENSEI SS DYNAMIC AND SS DYNAMIC CARGO
         function openProductLink() {
             const link = document.getElementById('productLink').value;
             if (link) {
-                if (!link.startsWith('http://') && !link.startsWith('https://')) {
-                    window.open('https://' + link, '_blank');
-                } else {
-                    window.open(link, '_blank');
-                }
+                window.open(link.startsWith('http') ? link : 'https://' + link, '_blank');
             } else {
                 alert('Please paste a product link first!');
             }
@@ -782,11 +759,7 @@ SENSEI SS DYNAMIC AND SS DYNAMIC CARGO
         function openFormLink() {
             const link = document.getElementById('form-product-link').value;
             if (link) {
-                if (!link.startsWith('http://') && !link.startsWith('https://')) {
-                    window.open('https://' + link, '_blank');
-                } else {
-                    window.open(link, '_blank');
-                }
+                window.open(link.startsWith('http') ? link : 'https://' + link, '_blank');
             } else {
                 alert('Please enter a product link first!');
             }
@@ -804,15 +777,12 @@ SENSEI SS DYNAMIC AND SS DYNAMIC CARGO
             const height = parseFloat(document.getElementById('calc-height').value) || 0;
             const weight = parseFloat(document.getElementById('calc-weight').value) || 0;
 
-            // CBM = (L × W × H) / 1,000,000
             const cbm = (length * width * height) / 1000000;
             document.getElementById('result-cbm').textContent = cbm.toFixed(5) + ' m³';
 
-            // Volumetric Weight Air = (L × W × H) / 6,000
             const volumetricAir = (length * width * height) / 6000;
             document.getElementById('result-volumetric-air').textContent = volumetricAir.toFixed(2) + ' KG';
 
-            // Chargeable Weight = Higher of Actual Weight vs Volumetric
             const chargeable = Math.max(weight, volumetricAir);
             document.getElementById('result-chargeable').textContent = chargeable.toFixed(2) + ' KG';
         }
@@ -823,28 +793,17 @@ SENSEI SS DYNAMIC AND SS DYNAMIC CARGO
 
         function reverseCBMToWeight() {
             const cbm = parseFloat(document.getElementById('reverse-cbm').value) || 0;
-            
-            // Sea: 1 CBM = 1000 KG (standard density)
-            const seaWeight = cbm * 1000;
-            document.getElementById('reverse-sea-weight').textContent = seaWeight.toFixed(2) + ' KG';
-            
-            // Air: 1 CBM = 167 KG (6000 divisor standard)
-            const airWeight = cbm * 167;
-            document.getElementById('reverse-air-weight').textContent = airWeight.toFixed(2) + ' KG';
+            document.getElementById('reverse-sea-weight').textContent = (cbm * 1000).toFixed(2) + ' KG';
+            document.getElementById('reverse-air-weight').textContent = (cbm * 167).toFixed(2) + ' KG';
         }
 
         function reverseWeightToCBM() {
             const weight = parseFloat(document.getElementById('reverse-weight').value) || 0;
-            
-            // CBM from weight using air freight standard: Weight / 167
-            const cbm = weight / 167;
-            document.getElementById('reverse-weight-cbm').textContent = cbm.toFixed(5) + ' m³';
+            document.getElementById('reverse-weight-cbm').textContent = (weight / 167).toFixed(5) + ' m³';
         }
 
         function resetAllCalculators() {
-            calcInputs.forEach(id => {
-                document.getElementById(id).value = '';
-            });
+            calcInputs.forEach(id => document.getElementById(id).value = '');
             document.getElementById('reverse-cbm').value = '';
             document.getElementById('reverse-weight').value = '';
             document.getElementById('result-cbm').textContent = '0.00000 m³';
@@ -871,7 +830,6 @@ SENSEI SS DYNAMIC AND SS DYNAMIC CARGO
             const volumetric = (length * width * height) / 6000;
             const chargeable = Math.max(weight, volumetric);
 
-            // Update VOLUMETRIC WEIGHT KG field
             document.querySelector('input[name="volumetricWeight"]').value = volumetric.toFixed(2);
 
             if (cbm > 0 || volumetric > 0 || weight > 0) {
@@ -880,6 +838,11 @@ SENSEI SS DYNAMIC AND SS DYNAMIC CARGO
                 document.getElementById('form-cbm').value = '';
             }
         }
+
+        // Reset tracking logic on Form layout trigger
+        document.getElementById('productForm').addEventListener('reset', () => {
+            document.getElementById('imagePreview').innerHTML = '';
+        });
 
         // Image Preview
         document.getElementById('productImages').addEventListener('change', function(e) {
@@ -906,7 +869,6 @@ SENSEI SS DYNAMIC AND SS DYNAMIC CARGO
             const form = document.getElementById('productForm');
             const formData = new FormData(form);
             
-            // Validate required fields
             const required = ['customerName', 'whatsapp', 'email', 'address', 'productName', 'quantity'];
             for (let field of required) {
                 if (!formData.get(field)) {
@@ -915,7 +877,6 @@ SENSEI SS DYNAMIC AND SS DYNAMIC CARGO
                 }
             }
 
-            // Build WhatsApp message with ALL data
             let message = '*NEW PRODUCT REQUEST - SS DYNAMIC SENSEI* 🇨🇳🇲🇾\n';
             message += '*BORONG CHINA & CARGO FORWARDER*\n';
             message += '━━━━━━━━━━━━━━━━━━━━━━━\n\n';
@@ -950,8 +911,7 @@ SENSEI SS DYNAMIC AND SS DYNAMIC CARGO
             message += '\n━━━━━━━━━━━━━━━━━━━━━━━\n';
             message += '_Please provide quotation and shipping cost from China to Malaysia 🇨🇳→🇲🇾_';
 
-            // Replace with your WhatsApp number
-            const whatsappNumber = '60123456789';
+            const whatsappNumber = '601151453147';
             const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
             window.open(whatsappUrl, '_blank');
         }
@@ -972,5 +932,4 @@ SENSEI SS DYNAMIC AND SS DYNAMIC CARGO
             });
         });
     </script>
-<script>(function(){document.addEventListener("click",function(e){var a=e.target.closest("[data-product-id]");if(!a)return;e.preventDefault();var pid=a.getAttribute("data-product-id");if(pid)parent.postMessage({type:"ecto-artifact-link-click",productId:pid},"*")})})();</script>
 </body>
