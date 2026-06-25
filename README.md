@@ -1,6 +1,5 @@
 # SENSEI-SS-DYNAMIC-AND-SS-DYNAMIC-CARGO
-SENSEI SS DYNAMIC AND SS DYNAMIC CARGO
-<head>
+SENSEI SS DYNAMIC AND SS DYNAMIC CARGO<head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SS DYNAMIC SENSEI BORONG CHINA & SS DYNAMIC CARGO - China to Malaysia Logistics</title>
@@ -206,8 +205,7 @@ SENSEI SS DYNAMIC AND SS DYNAMIC CARGO
                         </p>
                         <p class="text-lg md:text-xl mb-8 text-gray-200 leading-relaxed">
                             WE HELP MANAGE THE PURCHASE AND DELIVERY OF YOUR PRODUCTS ITEMS FROM 🇨🇳CHINA🇨🇳 TO 🇲🇾MALAYSIA🇲🇾
-                        </p>
-                        <div class="flex flex-wrap gap-4">
+                        </p><div class="flex flex-wrap gap-4">
                             <a href="#request" class="btn-primary text-white px-8 py-4 rounded-lg font-bold text-lg inline-flex items-center gap-2">
                                 <i class="fas fa-box"></i> Request Quote
                             </a>
@@ -931,4 +929,5 @@ SENSEI SS DYNAMIC AND SS DYNAMIC CARGO
                 }
             });
         });
-    </script></body>
+    </script>
+</body>
